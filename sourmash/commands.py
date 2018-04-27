@@ -525,7 +525,7 @@ def plot(args):
                                              vmin=args.vmin,
                                              vmax=args.vmax,
                                              force=args.force)
-    fig.savefig(matrix_out)
+    fig.savefig(matrix_out, bbox_inches='tight')
     notify('wrote numpy distance matrix to: {}', matrix_out)
 
     if len(labeltext) < 30:
